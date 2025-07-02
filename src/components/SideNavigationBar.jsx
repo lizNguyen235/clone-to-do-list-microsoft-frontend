@@ -10,8 +10,7 @@ import {
 import { MdOutlineAddBox, MdOutlineMail } from "react-icons/md";
 import { useState } from "react";
 import { GrHomeRounded } from "react-icons/gr";
-export default function SideNavigationBar() {
-  const [isOpen, setIsOpen] = useState(true);
+export default function SideNavigationBar({ setIsOpen, isOpen }) {
   function handleMenuClick() {
     setIsOpen(!isOpen);
   }
@@ -22,8 +21,8 @@ export default function SideNavigationBar() {
         isOpen ? "block" : "hidden"
       }`}
     >
-      <div className="h-[48px] px-[24px] mt-6">
-        <div className="mt-2">
+      <div className="h-[48px] px-[24px] mt-4">
+        <div className="">
           <button
             onClick={handleMenuClick}
             className="cursor-pointer p-2 hover:bg-gray-200"
