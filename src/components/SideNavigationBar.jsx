@@ -1,13 +1,19 @@
 import {
-  IoStarOutline,
   IoSunnyOutline,
   IoMenuOutline,
   IoCalendarOutline,
   IoPersonOutline,
   IoAddSharp,
 } from "react-icons/io5";
-
-import { MdOutlineAddBox, MdOutlineMail } from "react-icons/md";
+import { FaRegStar } from "react-icons/fa";
+import {
+  MdOutlineMail,
+  MdOutlineCalendarMonth,
+  MdOutlineGroup,
+  MdEdit,
+  MdDone,
+  MdOutlineAddBox,
+} from "react-icons/md";
 import { GrHomeRounded } from "react-icons/gr";
 export default function SideNavigationBar({ setIsOpen, isOpen }) {
   function handleMenuClick() {
@@ -46,7 +52,7 @@ function SideBarContent() {
   return (
     <div className="flex flex-col">
       <SideBarItem icon={<IoSunnyOutline size={24} />} label="My Day" />
-      <SideBarItem icon={<IoStarOutline size={24} />} label="Importance" />
+      <SideBarItem icon={<FaRegStar size={24} />} label="Importance" />
       <SideBarItem icon={<IoCalendarOutline size={24} />} label="Planned" />
       <SideBarItem
         icon={<IoPersonOutline size={24} />}
@@ -89,20 +95,20 @@ function AddNewListItem({ icon, label }) {
 function Footer() {
   return (
     <div className="flex flex-row items-center justify-around py-2">
-      <div className=" p-2 hover:bg-gray-200">
-        <MdOutlineMail size={24} />
-      </div>
       <div className="p-2 hover:bg-gray-200">
         <MdOutlineMail size={24} />
       </div>
       <div className="p-2 hover:bg-gray-200">
-        <MdOutlineMail size={24} />
+        <MdOutlineCalendarMonth size={24} />
       </div>
       <div className="p-2 hover:bg-gray-200">
-        <MdOutlineMail size={24} />
+        <MdOutlineGroup size={24} />
       </div>
       <div className="p-2 hover:bg-gray-200">
-        <MdOutlineMail size={24} />
+        <MdEdit size={24} />
+      </div>
+      <div className="p-2 hover:bg-gray-200 text-blue-600">
+        <MdDone size={24} />
       </div>
     </div>
   );
