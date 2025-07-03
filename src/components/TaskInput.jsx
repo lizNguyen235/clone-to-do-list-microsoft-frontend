@@ -12,7 +12,7 @@ export default function TaskInput() {
   };
 
   return (
-    <div className=" bg-white rounded-md shadow-sm border">
+    <div className=" bg-white rounded-md shadow-sm border mb-10">
       <div className="flex items-center space-x-2 px-4 pt-2">
         <div className="w-4 h-4 border-2 border-blue-500 rounded-full flex-shrink-0 mt-1"></div>
         <input
