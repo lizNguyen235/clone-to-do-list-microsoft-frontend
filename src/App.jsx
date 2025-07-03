@@ -1,4 +1,5 @@
 import SideNavigationBar from "./components/SideNavigationBar";
+import TaskInput from "./components/TaskInput";
 import TopNavigationBar from "./components/TopNavigationBar,";
 import { useState } from "react";
 function App() {
@@ -12,6 +13,7 @@ function App() {
           setIsOpen={setIsOpen}
           isOpen={isOpen}
         />
+        <TaskInput />
       </div>
     </div>
   );

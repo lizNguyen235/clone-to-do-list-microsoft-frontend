@@ -11,7 +11,7 @@ export default function TopNavigationBar({ label, setIsOpen, isOpen, icon }) {
   return (
     <nav className="flex items-center justify-between h-[72px]   border-gray-300 w-full">
       {/* Left section */}
-      <div className="flex items-center gap-2 m-2">
+      <div className="flex items-center gap-2">
         <button
           onClick={handleMenuClick}
           className="text-gray-600 hover:bg-gray-200  cursor-pointer p-2"

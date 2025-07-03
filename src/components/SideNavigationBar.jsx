@@ -8,7 +8,6 @@ import {
 } from "react-icons/io5";
 
 import { MdOutlineAddBox, MdOutlineMail } from "react-icons/md";
-import { useState } from "react";
 import { GrHomeRounded } from "react-icons/gr";
 export default function SideNavigationBar({ setIsOpen, isOpen }) {
   function handleMenuClick() {
