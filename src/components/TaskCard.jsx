@@ -6,7 +6,7 @@ export default function TaskCard({ title = "ASDFSDF", subtitle = "Tasks" }) {
 
   return (
     <div className="">
-      <div className="flex items-center justify-between bg-white shadow-md border px-[16px] rounded-md">
+      <div className="flex items-center justify-between bg-white shadow-md border px-[16px] rounded-md py-2">
         {/* Left: Radio & Text */}
         <div className="flex items-center gap-4">
           <div className="w-4 h-4 border-2 border-blue-500 rounded-full flex-shrink-0 mt-1"></div>
@@ -21,7 +21,7 @@ export default function TaskCard({ title = "ASDFSDF", subtitle = "Tasks" }) {
           {isStarred ? (
             <FaStar size={20} className="text-blue-600" />
           ) : (
-            <FaRegStar size={20} className="text-gray-400" />
+            <FaRegStar size={20} className="text-blue-600" />
           )}
         </button>
       </div>
